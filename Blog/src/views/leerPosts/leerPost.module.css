@@ -1,0 +1,40 @@
+.leerPost{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+.postCard{
+    min-width: 20rem;
+    max-width: 700px;
+    min-height: fit-content;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+    margin-top: 2rem;
+    border-radius: 7px;
+    padding: 8px;
+    box-shadow: 3px 3px 25px #031634;
+    background-color: #031634;
+    
+}
+.postNumber{
+    border-bottom: 3px solid #FCBC03;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    
+}
+.texts{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #e8ddcb;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
