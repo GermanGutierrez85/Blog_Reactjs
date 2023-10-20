@@ -1,8 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import style from "./Navbar.module.css";
-import GiteRoundedIcon from "@mui/icons-material/GiteRounded";
 
 export default function Navbar() {
   const { auth } = useContext(AuthContext);

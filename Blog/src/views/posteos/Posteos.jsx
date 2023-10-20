@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useContext, useEffect } from "react";
-import { client } from "../../api/client";
 import { postsAPI } from "../../api/postsAPI";
 import { AuthContext } from "../../context/AuthContext";
 import { postsExt } from "../../api/posteos_extendidos";
