@@ -2,7 +2,7 @@
   "name": "blog_final",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://germangutierrez85.github.io/Blog_Reactjs",
+  "homepage": "https://germangutierrez85.github.io/blog_reactjs",
   "type": "module",
   "scripts": {
     "dev": "vite",
