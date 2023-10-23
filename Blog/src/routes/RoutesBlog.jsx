@@ -16,35 +16,20 @@ export default function RoutesBlog() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
-          <Route path={process.env.PUBLIC_URL + "/login"} element={<Login />} />
-          <Route
-            path={process.env.PUBLIC_URL + "/logout"}
-            element={<Logout />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
 
-          <Route
-            path={process.env.PUBLIC_URL + "/"}
-            element={<RoutesProtect />}
-          >
+          <Route path="/" element={<RoutesProtect />}>
+            <Route path="/crear" element={<Crear />} />
+            <Route path="/posteos" element={<Posteos />} />
+            <Route path="posteos/leer/:id" element={<LeerPost />} />
             <Route
-              path={process.env.PUBLIC_URL + "/crear"}
-              element={<Crear />}
-            />
-            <Route
-              path={process.env.PUBLIC_URL + "/posteos"}
-              element={<Posteos />}
-            />
-            <Route
-              path={process.env.PUBLIC_URL + "posteos/leer/:id"}
-              element={<LeerPost />}
-            />
-            <Route
-              path={process.env.PUBLIC_URL + "posteos/leer/:id/modificar"}
+              path="posteos/leer/:id/modificar"
               element={<ModificarPost />}
             />
           </Route>
-          <Route path={process.env.PUBLIC_URL + "*"} element={<Error404 />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>
     </>
